@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/Yash-Handa/HackCBS/issues"
   },
+  "engines": {
+    "node": ">=8.0"
+  },
   "homepage": "https://github.com/Yash-Handa/HackCBS#readme",
   "dependencies": {
     "chalk": "^2.4.1",
