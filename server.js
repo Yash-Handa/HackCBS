@@ -9,5 +9,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log('server is running at port 1998 ....');
 });
