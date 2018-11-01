@@ -4,7 +4,7 @@ const path = require('path');
 const port = 1998;
 const app = express();
 
-app.get('/', (req,res) => {
+app.get('/', (req, res) => {
   res.render('index', path.join(__dirname, 'src', 'views'));
 });
 
