@@ -9,7 +9,9 @@
     "start-w": "set DEBUG=app && nodemon app.js",
     "stop-debug": "set DEBUG=null",
     "lint": "esw server.js --color",
-    "lint-w": "npm run lint -- --watch"
+    "lint-w": "npm run lint -- --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,12 +31,14 @@
     "debug": "^4.1.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-watch": "^4.0.2"
-  }
+  },
+  "snyk": true
 }
